@@ -36,6 +36,8 @@ This VS Code extension simplifies the process of coding and debugging LeetCode p
 Command: `cph.fetchTestCases`  
 - Prompts you to enter the LeetCode problem URL.  
 - Fetches and stores test cases locally in the workspace.  
+- **Note**: For inputs such as vectors or arrays, the first element of the scraped input represents the size of the array, followed by the elements of the array itself. This ensures compatibility with standard coding practices and formats.  
+
 
 #### **2. Run Test Cases**  
 Command: `cph.runTestCases`  
