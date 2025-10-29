@@ -65,10 +65,10 @@ export async function runTestCases(): Promise<void> {
             const actualOutput = await executeShellCommand(executionCommand);
 
             if (actualOutput.trim() === expectedOutput) {
-                testResults.push(`Test case ${idx + 1}: Passed ✅`);
+                testResults.push(`Test case ${idx + 1}: Passed`);
             } else {
                 testResults.push(
-                    `Test case ${idx + 1}: Failed ❌\nExpected: ${expectedOutput}\nActual: ${actualOutput.trim()}`
+                    `Test case ${idx + 1}: Failed \nExpected: ${expectedOutput}\nActual: ${actualOutput.trim()}`
                 );
             }
         }
